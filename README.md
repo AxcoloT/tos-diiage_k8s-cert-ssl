@@ -15,7 +15,7 @@ Cette ressource peut se créer soit en ligne de commande `$ kubectl create secre
 
 Dans les 2 cas, il faudra ajouter les chaînes du certificat et de la clé __encodé en base64__, en voici un exemple.
 
-> mon-cert-tls.yaml
+> [mon-cert-tls.yaml](mon-cert-tls.yaml)
 >
 > ```yaml
 > apiVersion: v1
@@ -40,7 +40,7 @@ La ressource utilisé ici est une ressource `TLSStore` qui fournit par Traefik a
 
 Voici un manifeste pour utiliser le certificat importé a tout vos `IngressRoutes`.
 
-> default-tls-store.yaml
+> [default-tls-store.yaml](default-tls-store.yaml)
 >
 > ```yaml
 > apiVersion: traefik.containo.us/v1alpha1
