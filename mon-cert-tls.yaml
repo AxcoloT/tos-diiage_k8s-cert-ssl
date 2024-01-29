@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+type: kubernetes.io/tls
+metadata:
+  name: mon-cert-tls
+data:
+  tls.crt: LS0tLS1CRUdJTiBDRV...LS0tGc== # Base64-Encode
+  tls.key: LS0tLS1CRUdJTiBSU0...LS0tGc== # Base64-Encode
